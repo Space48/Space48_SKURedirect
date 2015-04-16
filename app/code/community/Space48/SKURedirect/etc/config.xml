@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Space48_SKURedirect>
+            <version>0.1.0</version>
+        </Space48_SKURedirect>
+    </modules>
+
+    <global>
+        <models>
+            <space48_skuredirect>
+                <class>Space48_SKURedirect_Model</class>
+            </space48_skuredirect>
+        </models>
+    </global>
+
+    <frontend>
+        <routers>
+            <catalogsearch>
+                <args>
+                    <modules>
+                        <Space48_SKURedirect before="Mage_CatalogSearch">Space48_SKURedirect</Space48_SKURedirect>
+                    </modules>
+                </args>
+            </catalogsearch>
+        </routers>
+    </frontend>
+
+</config>
