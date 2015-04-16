@@ -23,7 +23,7 @@ class Space48_SKURedirect_ResultController extends Mage_CatalogSearch_ResultCont
                     Mage::dispatchEvent('catalog_product_load_after', array('product' => $product));
 
                     // Remove the first "/" because _redirect() doesn't like it
-                    $redirectURL = $product->getUrl();
+                    $redirectURL = $product->getProductURL();
                     if(substr($redirectURL, 0, 1) == '/') {
                         $redirectURL = substr($redirectURL, 1);
                         $this->_redirect($redirectURL);
