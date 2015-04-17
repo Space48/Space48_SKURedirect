@@ -29,7 +29,8 @@ Enterprise 1.13.1.0
 
 Installation Instructions
 -------------------------
-To install this module add the app folder to the web root. To activate the module log into the admin and go to System > Configuration > Space 48 > SKURedirect -> Settings.
+To install this module add the files to appropriate directories. 
+To activate the module log into the admin and go to System > Configuration > Advanced > Disable Modules Output > Select Enable on Space48_SKURedirect.
 
 
 Uninstallation
